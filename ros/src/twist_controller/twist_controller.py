@@ -28,7 +28,7 @@ class Controller(object):
         self.fuel_capacity = fuel_capacity
         self.brake_deadband = brake_deadband
         self.decel_limit = decel_limit
-        self. accel_limit = accel_limit
+        self.accel_limit = accel_limit
         self.wheel_radius = wheel_radius
 
         self.last_time = rospy.get_time()
@@ -54,7 +54,7 @@ class Controller(object):
 
         if linear_vel == 0. and current_vel < 0.1:
             throttle = 0
-            brake = 400
+            brake = 700
         
         elif throttle < 0.1 and vel_error < 0:
             throttle = 0
