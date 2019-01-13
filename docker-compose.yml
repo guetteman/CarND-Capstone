@@ -1,0 +1,11 @@
+version: "3"
+services:
+  capstone:
+    container_name: capstone
+    build: .
+    ports:
+      - 4567:4567
+    volumes:
+      - .:/capstone
+      - /tmp/log:/root/.ros/
+
