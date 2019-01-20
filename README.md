@@ -53,6 +53,10 @@ cd ros
 catkin_make
 source devel/setup.sh
 roslaunch launch/styx.launch
+
+//or
+
+catkin_make && source devel/setup.sh && roslaunch launch/styx.launch
 ```
 4. Run the simulator
 
